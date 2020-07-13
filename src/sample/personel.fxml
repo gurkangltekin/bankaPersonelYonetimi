@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.PersonelController">
+   <children>
+      <Label layoutX="14.0" layoutY="40.0" text="Adı" />
+      <Label layoutX="14.0" layoutY="80.0" text="Soyadı" />
+      <Label layoutX="14.0" layoutY="120.0" text="TC Kimlik" />
+      <Label layoutX="14.0" layoutY="160.0" text="İşe Giriş" />
+      <Label layoutX="14.0" layoutY="200.0" text="Maaş" />
+      <Label layoutX="14.0" layoutY="240.0" text="Etkinlik Sayısı" />
+      <Label layoutX="14.0" layoutY="280.0" text="Departman" />
+      <TextField fx:id="adi" layoutX="91.0" layoutY="35.0" />
+      <TextField fx:id="soyadi" layoutX="91.0" layoutY="75.0" />
+      <TextField fx:id="tcKimlik" layoutX="91.0" layoutY="115.0" />
+      <DatePicker fx:id="iseGiris" layoutX="91.0" layoutY="155.0" prefHeight="25.0" prefWidth="150.0" />
+      <TextField fx:id="maas" layoutX="91.0" layoutY="195.0" />
+      <TextField fx:id="etkinlikSayisi" layoutX="91.0" layoutY="235.0" prefWidth="150.0" />
+      <TextField fx:id="departman" layoutX="91.0" layoutY="275.0" />
+      <Button fx:id="formTemizle" layoutX="443.0" layoutY="300.0" mnemonicParsing="false" onAction="#formTemizle" prefWidth="150.0" text="Formu Temizle" />
+      <Button fx:id="personelYonetim" layoutX="443.0" layoutY="333.0" mnemonicParsing="false" onAction="#personelIslemleri" prefWidth="150.0" text="Yeni Personel Ekle" />
+      <TableView fx:id="personelTablosu" layoutX="259.0" layoutY="29.0" onMouseClicked="#personelDetay" prefHeight="237.0" prefWidth="334.0">
+        <columns>
+           <TableColumn fx:id="tabloAdi" prefWidth="111.0" text="Adı" />
+           <TableColumn fx:id="tabloSoyadi" prefWidth="111.0" text="Soyadı" />
+           <TableColumn fx:id="tabloIseGiris" prefWidth="112.0" text="İşe Giriş Tarihi" />
+        </columns>
+      </TableView>
+      <Label fx:id="hata" layoutX="259.0" layoutY="371.0" textFill="RED" />
+      <Button fx:id="digerVeriler" layoutX="14.0" layoutY="333.0" mnemonicParsing="false" onAction="#veriDetay" text="Diğer Veriler" />
+      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#geri" text="Geri" />
+      <Button fx:id="istenCikar" layoutX="169.0" layoutY="333.0" mnemonicParsing="false" onAction="#istenCikar" text="İşten Çıkar" />
+   </children>
+</AnchorPane>

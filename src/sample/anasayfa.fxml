@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="245.0" layoutY="117.0" text="Hoş geldiniz">
+         <font>
+            <Font name="Monotype Corsiva" size="25.0" />
+         </font></Label>
+      <Button layoutX="205.0" layoutY="224.0" mnemonicParsing="false" onAction="#tumPersoneller" prefWidth="192.0" text="Şube Çalışanları" />
+      <Button fx:id="kullanicilar" layoutX="205.0" layoutY="314.0" mnemonicParsing="false" onAction="#users" prefWidth="192.0" text="Kullanıcılar" />
+      <Button fx:id="cikis" layoutX="205.0" layoutY="272.0" mnemonicParsing="false" onAction="#logout" prefWidth="192.0" text="Çıkış Yap" />
+   </children>
+</AnchorPane>

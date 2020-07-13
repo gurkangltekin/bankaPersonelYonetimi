@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BireyselMusteriTemsilcisiController">
+   <children>
+      <Label fx:id="adSoyadLabel" layoutX="248.0" layoutY="73.0" />
+      <Label layoutX="97.0" layoutY="135.0" text="Müşteri Sayısı" />
+      <Label layoutX="97.0" layoutY="183.0" text="Aylık Satış Hedefi" />
+      <Label layoutX="97.0" layoutY="233.0" text="Toplam Satış" />
+      <TextField fx:id="musteriSayisi" layoutX="226.0" layoutY="131.0" />
+      <TextField fx:id="aylikSatisHedefi" layoutX="226.0" layoutY="179.0" />
+      <TextField fx:id="toplamSatis" layoutX="226.0" layoutY="229.0" />
+      <Button fx:id="guncelle" layoutX="502.0" layoutY="344.0" mnemonicParsing="false" onAction="#bilgileriYaz" text="Güncelle" />
+      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#geri" text="Geri" />
+   </children>
+</AnchorPane>

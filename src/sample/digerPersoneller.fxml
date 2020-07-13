@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DigerPersonellerController">
+   <children>
+      <Label fx:id="adSoyadLabel" layoutX="248.0" layoutY="56.0" text="Personel Adı Soyadı" />
+      <CheckBox fx:id="guvenlik" layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onAction="#cb1" text="Güvenlikçi" />
+      <CheckBox fx:id="temizlikci" layoutX="100.0" layoutY="150.0" mnemonicParsing="false" onAction="#cb2" text="Temizlikçi" />
+      <CheckBox fx:id="cayci" layoutX="100.0" layoutY="200.0" mnemonicParsing="false" onAction="#cb3" text="Çaycı" />
+      <CheckBox fx:id="stajyer" layoutX="100.0" layoutY="250.0" mnemonicParsing="false" onAction="#cb4" text="Stajyer" />
+      <Button fx:id="guncelle" layoutX="485.0" layoutY="336.0" mnemonicParsing="false" onAction="#guncelle" text="Güncelle" />
+      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#geri" text="Geri" />
+      <Label fx:id="hata" layoutX="100.0" layoutY="292.0" textFill="RED" />
+   </children>
+</AnchorPane>
